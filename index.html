@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Video Gallery</title>
+</head>
+<body>
+    <h1>Image and Video Gallery</h1>
+
+    <h2>Images</h2>
+    <img src="{{ url_for('static', filename='image.jpg') }}" alt="Image">
+
+    <h2>Videos</h2>
+    <video width="320" height="240" controls>
+        <source src="{{ url_for('static', filename='video.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
